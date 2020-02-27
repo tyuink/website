@@ -1,2 +1,2 @@
 # website
-My personal website (frontend)
+My Personal Website (frontend)
