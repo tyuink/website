@@ -1,13 +1,311 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 7px;
+  background-color: #333;
+}
+/* @media screen and (min-width: 1024px){
+  html {
+      font-size: 9px;
+  }
+} */
+@media screen and (min-width: 1112px){
+  html {
+      font-size: 10px;
+  }
+}
+@media screen and (min-width: 1366px){
+  html {
+      font-size: 11px;
+  }
+}
+@media screen and (min-width: 1600px){
+  html {
+      font-size: 13px;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #333;
+  /* background: #333; */
+  background: linear-gradient(to bottom right, #666, #333 50%, #555);
+}
+
+#root, .website {
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #999;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1 strong {
+  color: #000;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  float: left;
+  display: block;
+}
+
+footer {
+  left: 50%;
+  margin-left: -50.769231rem;
+  top: 50%;
+  margin-top: -27.692308rem;
+  position: absolute;
+}
+
+footer {
+  width: 101.5384615rem;
+  height: 5.2307692rem;
+  margin-top: 27.692308rem;
+  color: #cccccc;
+  font-size: .7692308rem;
+  line-height: 5.2307692rem;
+}
+
+footer div {
+  display: inline;
+  padding-left: 1.8461538rem;
+}
+
+@media screen and (max-width: 1024px){
+  html {
+      font-size: 13px;
+  }
+  body {
+      background: none;
+  }
+  footer {
+      display: none;
+  }
+}
+
+.icon {
+font-family:"wangweiqi" !important;
+font-size:16px;font-style:normal;
+-webkit-font-smoothing: antialiased;
+-webkit-text-stroke-width: 0.2px;
+-moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+left: 50%;
+margin-left: -50.769231rem;
+top: 50%;
+margin-top: -27.692308rem;
+position: absolute;
+}
+#app {
+width: 101.5384615rem;
+height: 55.3846154rem;
+background-color: #fff;
+border: 1px solid #222;
+}
+#app aside {
+width: 27.6923077rem;
+height: 100%;
+position: absolute;
+background: #f4f4f4;
+border-right: 1px solid #eee;
+}
+#app article {
+width: 73.8461538rem;
+height: 100%;
+right: 0;
+position: absolute;
+}
+#logo {
+width: 10.3076923rem;
+height: 13.2307692rem;
+left: 3.8461538rem;
+top: 0;
+position: absolute;
+background: #000;
+}
+#logo div {
+left: 5.3846154rem;
+top: 8.0769231rem;
+position: absolute;
+font-family: "logo", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+color: #fff;
+font-size: 3.8461538rem;
+}
+#app h1, #app h2, #app h3 {
+height: 2.3076923rem;
+left: 3.8461538rem;
+position: absolute;
+font-size: 3.076923rem;
+line-height: 2.3076923rem;
+letter-spacing: .2307692rem;
+font-family: "textfont", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+#app h2 {
+top: 18.0769231rem;
+font-size: 1.6923077rem;
+color: #333;
+font-family: "Georgia", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+#app h1 {
+top: 21.9230769rem;
+font-size: 2.1538462rem;
+color: #666;
+}
+#app h3 {
+top: 25.7692308rem;
+font-size: 1.2307692rem;
+color: #999;
+letter-spacing: .1538462rem;
+}
+#app aside ul {
+height: 1.9230769rem;
+left: 3.8461538rem;
+bottom: 3rem;
+position: absolute;
+}
+#app aside li {
+font-size: 1.7692308rem;
+line-height: 1.9230769rem;
+margin-right: 1.0769231rem;
+color: #999;
+}
+#app aside a {
+color: #999;
+}
+#app aside a:hover {
+color: #666;
+}
+article ul {
+height: 5.3846154rem;
+width: 94%;
+margin-left: 3%;
+border-bottom: 1px solid #eee;
+}
+article li {
+width: 3.8461538rem;
+height: 5.3846154rem;
+margin: 0 1.9230769rem;
+text-align: center;
+line-height: 5.6923077rem;
+font-size: 1.4615385rem;
+color: #999;
+letter-spacing: .1538462rem;
+cursor: pointer;
+font-family: "textfont", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+article li:first-child {
+margin-left: 2.3076923rem;
+}
+article li.selected {
+color: #333;
+border-bottom: 1px solid #aaa;
+}
+#content {
+height: 49.9rem;
+width: 100%;
+top: 5.3846154rem;
+left: 0;
+position: absolute;    
+}
+#content > div {
+width: 100%;
+height: 100%;
+text-align: center;
+color: #aaa;
+font-size: 1.8461538rem;
+line-height: 48.4615385rem;
+letter-spacing: 1px;
+position: absolute;
+left: 0;
+top: 0;
+}
+.fade-enter-active, .fade-leave-active {
+transition: opacity .3s;
+}
+.fade-enter-active {
+transition-delay: .3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+opacity: 0;
+}
+
+
+@media screen and (max-width: 1024px){
+#app {
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 200%;
+    border: none;
+}
+
+#app aside, #app article {
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    border: 0;
+    z-index: 10;
+}
+
+#app article {
+    top: 50%;
+    z-index: 5;
+}
+#app article ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 5;
+    margin: 0;
+    margin-top: -5.8rem;
+}
+#app article ul li {
+    width: 22%;
+    text-align: center;
+    margin: 0;
+    font-size: 1.2307192rem;
+}
+#app article ul li:first-child {
+    margin-left: 6%;
+}
+#app article ul li:last-child {
+    margin-right: 6%;
+}
+
+#app article #content {
+    height: 120%;
+    z-index: 1;
+    top: 0;
+}
+#app article #content > div {
+    font-size: 1.3846154rem;
+}
 }
