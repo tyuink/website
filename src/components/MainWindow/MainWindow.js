@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import "./MainWindow.css";
 
 class MainWindow extends Component {
   render() {
