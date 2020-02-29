@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Tabs.css";
+import "./Tabs.less";
 
 class Tabs extends Component {
   render() {

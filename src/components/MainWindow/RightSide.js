@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./RightSide.css";
+import "./RightSide.less";
 
 class RightSide extends Component {
   render() {

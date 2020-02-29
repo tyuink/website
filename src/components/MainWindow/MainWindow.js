@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./MainWindow.css";
+import "./MainWindow.less";
 
 class MainWindow extends Component {
   render() {

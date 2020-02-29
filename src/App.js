@@ -12,7 +12,7 @@ import Blogs from "./components/Blogs/Blogs";
 import Projects from "./components/Projects/Projects";
 import AboutMe from "./components/AboutMe/AboutMe";
 
-import "./App.css";
+import "./App.less";
 
 function App() {
   return (
