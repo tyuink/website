@@ -5,6 +5,7 @@ import LeftSide from "./components/MainWindow/LeftSide";
 import RightSide from "./components/MainWindow/RightSide";
 import Footer from "./components/Footer/Footer";
 import Tabs from "./components/Tabs/Tabs";
+import TabPane from "./components/Tabs/TabPane";
 import Introduction from "./components/Introduction/Introduction";
 import Contacts from "./components/Contacts/Contacts";
 import Photos from "./components/Photos/Photos";
@@ -23,11 +24,11 @@ function App() {
           <Contacts />
         </LeftSide>
         <RightSide>
-          <Tabs>
-            <Photos show={true} />
-            <Projects />
-            <Blogs />
-            <AboutMe />
+          <Tabs defaultActiveKey="1">
+            <TabPane key="1" tab="主页"><Photos/></TabPane>
+            <TabPane key="2" tab="项目"><Projects/></TabPane>
+            <TabPane key="3" tab="日志"><Blogs/></TabPane>
+            <TabPane key="4" tab="关于"><AboutMe/></TabPane>
           </Tabs>
         </RightSide>
       </MainWindow>
