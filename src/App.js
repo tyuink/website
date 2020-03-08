@@ -32,7 +32,7 @@ function App() {
           </Tabs>
         </RightSide>
       </MainWindow>
-      <Footer cright="&copy;2020&nbsp;&nbsp;本人保留所有权利" icp="吉ICP备15004700号-1" />
+      <Footer cright="&copy;2020&nbsp;&nbsp;本人保留所有权利" icp="吉ICP备15004700号" />
     </WebSite>
   );
 }
