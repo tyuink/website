@@ -13,6 +13,7 @@ node_modules/
 
 # production
 /build
+/depoly/*.zip
 
 # misc
 .DS_Store
