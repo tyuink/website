@@ -4,9 +4,9 @@ import "./MainWindow.less";
 class MainWindow extends Component {
   render() {
     return (
-      <div id="app">
+      <main>
         {this.props.children}
-      </div>
+      </main>
     );
   }
 }

@@ -29,9 +29,9 @@ class Tabs extends Component {
     );
 
     return (
-      <div>
-        <ul id="menu">{menuItems}</ul>
-        <div id="content">{tabPanes}</div>
+      <div id="menu-container">
+        <ul>{menuItems}</ul>
+        <div>{tabPanes}</div>
       </div>
     );
   }

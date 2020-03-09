@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import "./WebSite.less";
 
 class WebSite extends Component {
   render() {
     return (
-      <div className="website">
+      <div id="page">
         {this.props.children}
       </div>
     )

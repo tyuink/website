@@ -1,34 +1,50 @@
-#content {
-  height  : 49.9rem;
-  width   : 100%;
-  top     : 5.3846154rem;
-  left    : 0;
-  position: absolute;
+#menu-container {
+  flex          : 1 0 auto;
+  flex-direction: column;
+  display       : flex;
+
+  ul {
+    flex-basis   : 5.3846154rem;
+    height       : 5.3846154rem;
+    width        : 94%;
+    margin-left  : 3%;
+    display      : flex;
+    border-bottom: 1px solid #eee;
+  }
+
+  li {
+    flex-basis    : 3.8461538rem;
+    height        : 100%;
+    margin        : 0 1.9230769rem;
+    text-align    : center;
+    line-height   : 5.6923077rem;
+    font-size     : 1.4615385rem;
+    color         : #999;
+    letter-spacing: .1538462rem;
+    cursor        : pointer;
+    font-family   : "textfont", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+
+  li:first-child {
+    margin-left: 2.3076923rem;
+  }
+
+  li.selected {
+    color        : #333;
+    border-bottom: 1px solid #aaa;
+  }
 
   &>div {
-    width         : 100%;
-    height        : 100%;
-    text-align    : center;
+    flex          : 1 0 auto;
+    display       : flex;
     color         : #aaa;
     font-size     : 1.8461538rem;
-    line-height   : 48.4615385rem;
     letter-spacing: 1px;
-    position      : absolute;
-    left          : 0;
-    top           : 0;
+
+    &>div {
+      width     : 100%;
+      text-align: center;
+      align-self: center;
+    }
   }
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity .3s;
-}
-
-.fade-enter-active {
-  transition-delay: .3s;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
 }
